@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+.item {
+    margin-right: 30px;
+    color: white;
+    font-size: 28px;
+    display: block;
+}
+.active {
+    color: red;
+}
