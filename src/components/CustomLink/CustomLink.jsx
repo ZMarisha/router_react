@@ -10,4 +10,4 @@ const CustomLink = ({children, to}) => {
     )
 }
 
-export {CustomLink};
+export { CustomLink };

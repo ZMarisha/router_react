@@ -6,7 +6,7 @@ import d from './Posts.module.css'
 const Posts = () => {
 
     const [post, setPost] = useState(null);
-    const {id} = useParams();
+    let {id} = useParams();
 
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
@@ -24,4 +24,4 @@ const Posts = () => {
     )
 }
 
-export {Posts};
+export { Posts };
