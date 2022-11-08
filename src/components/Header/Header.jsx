@@ -1,7 +1,7 @@
 import React from "react";
 import d from './Header.module.css';
 // import { NavLink } from "react-router-dom";
-import { CustomLink } from "./CustomLink/CustomLink";
+import { CustomLink } from "../CustomLink/CustomLink";
 
 
 // const activeLink = ({isActive}) => isActive ? d.active : d.item
