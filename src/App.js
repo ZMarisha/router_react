@@ -11,6 +11,7 @@ import { Login } from './components/Login/Login';
 import { Private } from './components/HOC/Private';
 import { NewPost } from './components/Blog/NewPost/NewPost';
 import { AuthProvider } from './components/HOC/AuthProvider';
+import { AboutUs } from './components/AboutUs/AboutUs';
 // import Header from './components/Header/Header';
 // import Footer from './components/Footer/Footer'
 
@@ -30,6 +31,10 @@ const App = () => {
             </Private>
           } />
           <Route path='login' element={<Login />}/>
+          <Route path='about/*' element={<AboutUs />}>
+            <Route path='contact' element={<p>tel: 000-000-00-00</p>} />
+            <Route path='team' element={<p>Team: Oleg, Sasha, Dima</p>} />
+          </Route>
           <Route path='settings' element={<Settings />}/>
           <Route path='settings-app' element={<Navigate to='/settings' replace/>}/>
           <Route path='*' element={<NotFound />} />
